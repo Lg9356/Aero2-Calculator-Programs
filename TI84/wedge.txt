@@ -1,0 +1,13 @@
+Input "DELTA: ",D
+Input "MA1: ",M
+Input "P1: ",P
+Input "T1: ",T
+Input "K: ",K
+solve(tan(((2/tan(θ))*(M²*(sin(θ))²-1))/(M²*(K+cos(2*θ))+2))-D,θ,D)->θ
+Disp "θ: ",θ
+√((M²*(sin(θ))²+2/(K-1))/(2*K/K-1)*M²*(sin(θ))²-1)/sin(θ-D)->N
+Disp "MA2: ",N
+P*(2*K/(K-1)*M²*(sin(θ))²-(K-1)/(K+1))->Q
+Disp "P2: ",Q
+T*((1+(K-1)/2*M²*(sin(θ))²)*(2*K/(K-1)*M²*(sin(θ))²-1))/(M²*(sin(θ))²*(K+1)²/2/(K-1))->U
+Disp "T2: ",U

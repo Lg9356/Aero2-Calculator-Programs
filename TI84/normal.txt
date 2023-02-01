@@ -1,0 +1,13 @@
+Input "MA1: ",M
+Input "P1: ",P
+Input "T1: ",T
+Input "RHO1: ",R
+Input "K: ",K
+√((M²+2/(K-1))/(2*K/(K-1)*M²-1))-N
+Disp "MA2: ",N
+P*(1+K*M²)/(1+K*N²)->Q
+Disp "P2: ",Q
+T*(1+(K-1)/2*M²)/(1+(K-1)/2*N²)->U
+Disp "T2: ",U
+R*M/N*√((1+(K-1)/2*N²)/(1+(K-1)/2*M²))->S
+Disp "RHO2: ",S

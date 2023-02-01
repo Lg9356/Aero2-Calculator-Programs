@@ -1,0 +1,18 @@
+Input "DELTA: ",D
+Input "MA1: ",M
+Input "P1: ",P
+Input "T1: ",T
+Input "RHO1 ",R
+Input "K: ",K
+√((K+1)/(K-1))*tan(√((K-1)/(K+1)*(M²-1)))-tan(√(M²-1))->V
+Disp "V1: ",V
+V+D->W
+Disp "V2: ",W
+solve(√((K+1)/(K-1))*tan(√((K-1)/(K+1)*(N²-1)))-tan(√(N^2-1))-W,N,M)->N
+Disp "M2: ",N
+P*((1+(K-1)/2*M²)/(1+(K-1)/2*N²))^(K/(K-1))->Q
+Disp "P2: ",Q
+T*((1+(K-1)/2*M²)/(1+(K-1)/2*N²))->U
+Disp "T2: ",U
+R*((1+(K-1)/2*M²)/(1+(K-1)/2*N²))^(1/(K-1))->S
+Disp "RHO2: ",S
