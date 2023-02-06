@@ -1,0 +1,27 @@
+Define LibPub int_comp()=
+Prgm
+:Request "A_ref = ",aref
+:Request "A = ",area
+:Request "P0 = ",p0
+:Request "T0 = ",t0
+:Request "k = ",k
+:Request "R = ",r
+:masub:=right(solve(((area)/(aref))=((1)/(ma))*(((1+((k-1)/(2))*ma^(2))/(1+((k-1)/(2)))))^(3),ma=0))
+:masuper:=right(solve(((area)/(aref))=((1)/(ma))*(((1+((k-1)/(2))*ma^(2))/(1+((k-1)/(2)))))^(3),ma=100))
+:Disp "Ma_sub = ",masub
+:Disp "Ma_super = ",masuper
+:mdot:=aref*((p0)/(√(r*t0)))*((√(k))/((1+((k-1)/(2)))^(((k+1)/(2*(k-1))))))
+:Disp "mdot = ",mdot
+:
+:tsub:=((t0)/(1+((k-1)/(2))*masub^(2)))
+:tsuper:=((t0)/(1+((k-1)/(2))*masuper^(2)))
+:Disp "T_sub = ",tsub
+:Disp "T_super = ",tsuper
+:psub:=((p0)/((1+((k-1)/(2))*masub^(2))^(((k)/(k-1)))))
+:psuper:=((p0)/((1+((k-1)/(2))*masuper^(2))^(((k)/(k-1)))))
+:Disp "P_sub = ",psub
+:Disp "P_super = ",psuper
+:Request "P_ext = ",pext
+:ft:=mdot*masuper*√(k*r*tsuper)+(psuper-pext)*area
+:Disp "F_thrust = ",ft
+:EndPrgm

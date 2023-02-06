@@ -1,0 +1,22 @@
+Input "A*: ",A
+Input "A: ",B
+Input "P0: ",P
+Input "T0: ",T
+Input "K: ",K
+Input "R: ",R
+solve(1/M*((1+(k-1)/2*M^2)/(1+(K-1)/2))^3-B/A,MA=0)->M
+solve(1/M*((1+(k-1)/2*M^2)/(1+(K-1)/2))^3-B/A,MA=100)->N
+Disp "MSUB: ",M
+Disp "MSUPER: ",N
+B*P/√(R*T)*√(K)/(1+(K-1)/2)^((K+1)/2/(K-1))->D
+Disp "MDOT: ",D
+T/(1+(k-1)/2*M^2)->U
+T/(1+(k-1)/2*N^2)->V
+Disp "TSUB: ",U
+Disp "TSUPER: ",V
+P/(1+(k-1)/2*M^2)^(K/(K-1))->Q
+P/(1+(k-1)/2*N^2)^(K/(K-1))->Z
+Disp "PSUB: ",Q
+Disp "PSUPER: ",Z
+Input "PEXT: ",S
+D*N*√(K*R*V)+(Z-S)*B
