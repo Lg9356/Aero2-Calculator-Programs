@@ -7,3 +7,7 @@ Currently, the repository contains programs for the following Scenarios:
 * Angled Shock Waves
 * Shock Wave Expansion
 * Internal Compression and Engine Thrust
+
+Please report any issues or bugs to Logan@Ruddicks.net.
+
+Please watch the branch for pertinent updates, bug fixes, and new programs.
