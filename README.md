@@ -3,7 +3,7 @@ This repository contains the programs written for AE 302 Aerodynamics II for ERA
 It is meant for general use and is distributed with permission of the writer, Logan Ruddick.
 
 Currently, the repository contains programs for the following Scenarios:
-Normal Shock Waves
-Angled Shock Waves
-Shock Wave Expansion
-Internal Compression and Engine Thrust
+* Normal Shock Waves
+* Angled Shock Waves
+* Shock Wave Expansion
+* Internal Compression and Engine Thrust
