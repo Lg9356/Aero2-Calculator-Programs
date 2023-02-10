@@ -12,6 +12,9 @@ Currently, the repository contains programs for the following Scenarios:
 ## Installation
 To install the programs, simply download the repository as a zip file and extract it to your computer. Then, transfer the files to your calculator using the TI Connect CE or TI NSpire CX CAS Student software.
 
+### Note on all programs
+The programs may not work if the calculator is in radians. The programs are written to be used in degrees only.
+
 ### Note on the TI NSpire CX CAS
 If programs do not show up, you should remember to take the following steps:
 1. Open the file on your calculator.
