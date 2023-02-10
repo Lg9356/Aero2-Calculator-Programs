@@ -28,6 +28,9 @@ The programs should now show up in the 'Programs' menu.
 Please watch the branch for pertinent updates, bug fixes, and new programs.
 
 Please report any issues or bugs to Logan Ruddick via:
+
 Logan@Ruddicks.net
+
 Ruddickl@my.erau.edu
+
 (916)895-4480
