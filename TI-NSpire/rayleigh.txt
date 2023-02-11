@@ -1,0 +1,19 @@
+Define LibPub rayleigh()=
+Prgm
+:Request "T1 = ",t1
+:Request "v1 = ",v1
+:Request "k = ",k
+:Request "R = ",r
+:Request "q = ",q
+:Request "f = ",f
+:cp:=((r)/(1-((1)/(k))))
+:Disp "cp = ",cp
+:ma1:=((v1)/(√(k*r*t1)))
+:Disp "Ma1 = ",ma1
+:t2:=((−1+√(1+((2*v1^(2))/(cp*t1^(2)))*(((v1^(2))/(2*cp))+((q*f)/(cp))+t1)))/(((v1^(2))/(cp*t1^(2)))))
+:Disp "T2 = ",t2
+:v2:=v1*((t2)/(t1))
+:Disp "v2 = ",v2
+:ma2:=((v2)/(√(k*r*t2)))
+:Disp "Ma2 = ",ma2
+:EndPrgm

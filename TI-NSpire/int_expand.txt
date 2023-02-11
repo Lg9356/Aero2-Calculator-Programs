@@ -1,0 +1,17 @@
+Define LibPub int_expand()=
+Prgm
+:Request "Ma1 = ",ma1
+:Request "ratio A = ",ra
+:Request "P1 = ",p1
+:Request "T1 = ",t1
+:Request "ρ1 = ",ρ1
+:Request "k = ",k
+:ma2:=right(solve(ma2=ma1*ra*(((1+((k-1)/(2))*ma1^(2))/(1+((k-1)/(2))*ma2^(2))))^(((k)/(k-1))-((1)/(2))),ma2=ma1))
+:Disp "Ma2 = ",ma2
+:p2:=p1*(((1+((k-1)/(2))*ma1^(2))/(1+((k-1)/(2))*ma2^(2))))^(((k)/(k-1)))
+:Disp "P2 = ",p2
+:t2:=t1*((1+((k-1)/(2))*ma1^(2))/(1+((k-1)/(2))*ma2^(2)))
+:Disp "T2 = ",t2
+:ρ2:=ρ1*((ma1)/(ma2))*√(((1+((k-1)/(2))*ma2^(2))/(1+((k-1)/(2))*ma1^(2))))
+:Disp "ρ2 = ",ρ2
+:EndPrgm
