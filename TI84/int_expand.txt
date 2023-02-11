@@ -1,0 +1,14 @@
+Input "MA1: ",M
+Input "RATIO A: ",A
+Input "P1: ",P
+Input "T1: ",T
+Input "RHO1: ",R
+Input "K: ",K
+solve(M*A*((1+(k-1)/2*M^2)/(1+(K-1)/2*N^2))^(K/(K-1)-0.5)-N,N,M)->N
+Disp "MA2: ",N
+P*((1+(K-1)/2*M^2)/(1+(K-1)/2*N^2))^(K/(K-1))->Q
+Disp "P2: ",Q
+T*(1+(K-1)/2*M^2)/(1+(K-1)/2*N^2)->U
+Disp "T2: ",U
+R*M/N*√((1+(K-1)/2*M^2)/(1+(K-1)/2*N^2))->S
+Disp "RHO2: ",S

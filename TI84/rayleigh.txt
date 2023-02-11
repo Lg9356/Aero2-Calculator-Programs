@@ -1,0 +1,16 @@
+Input "T1: ",T
+Input "V1: ",V
+Input "K: ",K
+Input "R: ",R
+Input "Q: ",Q
+Input "F: ",F
+R/(1-1/K)->C
+Disp "CP: ",C
+V/√(K*R*T)->M
+Disp "MA1: ",M
+(-1+√(1+(2*V^2)/(C*T^2)*((V^2)/(2*C)+(Q*F)/(CP)+T)))/((V^2)/(C*T^2))->U
+Disp "T2: ",U
+V*U/T->W
+Disp "V2: ",W
+W/√(K*R*U)->N
+Disp "MA2: ",N
