@@ -1,0 +1,44 @@
+Input "MA_INF: ",M
+Input "ALPHA: ",A
+Input "D1: ",B
+Input "D2: ",C
+Input "D3: ",D
+Input "D4: ",E
+Input "K: ",G
+
+solve(tan(2/tan(Z)*(M²*sin(Z)²-1)/(M²*(G+cos(2*Z))+2))+A-B,Z,2*(B-A))→θ
+√((M²*sin(θ)²+2/(G-1))/(2*G/(G-1)*M²*sin(θ)²-1))/sin(θ-B+A)→I
+2*G/(G+1)*M²*sin(θ)²-(G-1)/(G+1)→P
+Disp "MA1: ",toString(I)
+
+√((G+1)/(G-1))*tan(√((G-1)/(G+1)*(I²-1)))-tan(√(I²-1))→U
+U+B+C→V
+solve(√((G+1)/(G-1))*tan(√((G-1)/(G+1)*(Z²-1)))-tan(√(Z²-1))-V,Z,I)→J
+P*((1+(G-1)/2*I²)/(1+(G-1)/2*J²))^(G/(G-1))→Q
+Disp "MA2: ",toString(J)
+
+solve(tan(2/tan(Z)*(M²*sin(Z)²-1)/(M²*(G+cos(2*Z))+2))-A-D,Z,2*(D+A))→θ
+√((M²*sin(θ)²+2/(G-1))/(2*G/(G-1)*M²*sin(θ)²-1))/sin(θ-D-A)→K
+2*G/(G+1)*M²*sin(θ)²-(G-1)/(G+1)→S
+Disp "MA3: ",toString(K)
+
+√((G+1)/(G-1))*tan(√((G-1)/(G+1)*(K²-1)))-tan(√(K²-1))→U
+U+D+E→V
+solve(√((G+1)/(G-1))*tan(√((G-1)/(G+1)*(Z²-1)))-tan(√(Z²-1))-V,Z,K)→L
+S*((1+(G-1)/2*K²)/(1+(G-1)/2*L²))^(G/(G-1))→T
+Disp "MA4: ",toString(L)
+
+Input "Enter Zero...",Z
+Disp "P1: ",toString(P)
+Disp "P2: ",toString(Q)
+Disp "P3: ",toString(S)
+Disp "P4: ",toString(T)
+Input "Enter Zero...",Z
+
+(­P*cos(B-A)-Q*cos(C+A)+S*cos(D+A)+T*cos(E-A))/G/M²→X
+(P*sin(B-A)-Q*sin(C+A)+S*sin(D+A)-T*sin(E-A))/G/M²→Y
+X/Y→R
+
+Disp "CL: ",toString(X)
+Disp "CD: ",toString(Y)
+Disp "RATIO: ",toString(R)
