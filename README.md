@@ -15,6 +15,9 @@ To install the programs, simply download the repository as a zip file and extrac
 ### Note on all programs
 The programs may not work if the calculator is in radians. The programs are written to be used in degrees only.
 
+### Note on Diamond Airfoil Program
+Delta values are measured as angle from centerline of the airfoil, and always positive. They do not change with alpha.
+
 ### Note on the TI NSpire CX CAS
 If programs do not show up, you should remember to take the following steps:
 1. Open the file on your calculator.
